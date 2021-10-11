@@ -2,7 +2,6 @@
 	<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/kezf/nuts/total">
 	<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/kezf/nuts?label=Release">
 	<img alt="GitHub issues" src="https://img.shields.io/github/issues/kezf/nuts?label=Issues">
-	<a href="https://ko-fi.com/kezf"><img src="https://img.shields.io/badge/Ko--Fi-Donate-red"></a><br><br>
 	<span>Toolkits app for programmers and testers</span><br><br>
 	<small>Made by <a href="https://kezf.github.io">Oliver</a></small>
 </p>

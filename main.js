@@ -5,7 +5,7 @@ app.commandLine.appendSwitch("disable-http-cache");
 
 var mainWindow = null;
 
-const currentVersion = "1.4.1";
+const currentVersion = "1.0.0";
 
 
 const gotTheLock = app.requestSingleInstanceLock()
@@ -79,7 +79,7 @@ function createWindow() {
         },
         icon: __dirname + iconPath,
         show: false,
-        title: 'Codex'
+        title: 'Nuts'
     });
 
     mainWindow.webContents.once('dom-ready', () => {
@@ -88,7 +88,7 @@ function createWindow() {
         try {
 
             const { net } = require('electron');
-            const request = net.request('https://jcv8000.github.io/codex/latestversion.txt')
+            const request = net.request('https://kezf.github.io/nuts/latestversion.txt')
             request.on('response', (response) => {
                 response.on('data', (chunk) => {
                     if (chunk.toString() !== currentVersion) {
@@ -126,7 +126,7 @@ function createWindow() {
     mainWindow.loadFile('index.html')
 
     // Open the DevTools.
-    //mainWindow.webContents.openDevTools()
+    mainWindow.webContents.openDevTools()
 
     Menu.setApplicationMenu(new Menu());
 

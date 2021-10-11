@@ -1,6 +1,5 @@
 <p align="center">
-	<img  src="https://github.com/kezf/nuts/img/logo.png"  width="400" /><br>
-	<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/kezf/nuts/total?label=Downloads">
+	<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/kezf/nuts/total">
 	<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/kezf/nuts?label=Release">
 	<img alt="GitHub issues" src="https://img.shields.io/github/issues/kezf/nuts?label=Issues">
 	<a href="https://ko-fi.com/kezf"><img src="https://img.shields.io/badge/Ko--Fi-Donate-red"></a><br><br>

@@ -1,0 +1,88 @@
+{
+    "name": "nuts",
+    "version": "1.0.0",
+    "description": "Nuts - Toolkits app for programmers and testers",
+    "homepage": "https://www.nuts.com/",
+    "repository": "https://github.com/kezf/Nuts",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "dist": "electron-builder"
+    },
+    "build": {
+        "appId": "org.miser.nuts",
+        "productName": "Nuts",
+        "copyright": "",
+        "buildVersion": "1.0.0",
+        "mac": {
+            "target": "dmg",
+            "icon": "./icons/icon.icns",
+            "category": "public.app-category.productivity"
+        },
+        "win": {
+            "target": [
+                "nsis",
+                "zip"
+            ],
+            "icon": "./icons/icon.ico",
+            "signingHashAlgorithms": [
+                "sha256",
+                "sha1"
+            ],
+            "signAndEditExecutable": true,
+            "publisherName": "Oliver"
+        },
+        "nsis": {
+            "oneClick": "false",
+            "allowToChangeInstallationDirectory": "true",
+            "shortcutName": "Nuts"
+        },
+        "linux": {
+            "target": [
+                "deb",
+                "tar.xz"
+            ],
+            "icon": "./icons/icon.icns",
+            "vendor": "Oliver",
+            "category": "Utility",
+            "executableName": "Nuts",
+            "description": "Nuts - Toolkits app for programmers and testers. Made by Oliver",
+            "synopsis": "Toolkits app for programmers and testers"
+        }
+    },
+    "author": {
+        "name": "Oliver",
+        "email": "kezf@foxmail.com"
+    },
+    "license": "",
+    "devDependencies": {
+        "electron": "^12.1.0",
+        "electron-builder": "latest"
+    },
+    "dependencies": {
+        "@benrbray/prosemirror-math": "^0.2.2",
+        "bootstrap": "4.5.0",
+        "custom-electron-titlebar": "^3.2.6",
+        "electron-context-menu": "^2.4.0",
+        "feather-icons": "^4.28.0",
+        "highlight.js": "^10.6.0",
+        "jquery": "^3.5.1",
+        "katex": "^0.13.18",
+        "prosemirror-commands": "^1.1.7",
+        "prosemirror-dropcursor": "^1.3.3",
+        "prosemirror-gapcursor": "^1.1.5",
+        "prosemirror-highlightjs": "^0.7.2",
+        "prosemirror-history": "^1.1.3",
+        "prosemirror-inputrules": "^1.1.3",
+        "prosemirror-keymap": "^1.1.4",
+        "prosemirror-markdown": "^1.5.2",
+        "prosemirror-menu": "^1.1.4",
+        "prosemirror-model": "^1.13.3",
+        "prosemirror-schema-list": "^1.1.4",
+        "prosemirror-state": "^1.3.4",
+        "prosemirror-tables": "^1.1.1",
+        "prosemirror-transform": "^1.2.11",
+        "prosemirror-view": "^1.17.6",
+        "validator": "^13.6.0"
+    }
+}
